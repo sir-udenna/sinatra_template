@@ -1,0 +1,11 @@
+<h1>This is my index page for consoles</h1>
+
+<ul>
+<% @consoles.each do | console | %>
+<a href="/consoles/<%=console.id%>"> <li> <%=console.name %> </li></a>
+<% end %>
+</ul>
+
+<a href="consoles/create_console">Create a Console</a>
+<br/>
+<a href="/edit">Edit a Console</a>

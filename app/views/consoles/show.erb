@@ -1,0 +1,15 @@
+<h1>Show page for consoles</h1>
+
+<h1> Console Name: <%= @console.name %> </h1>
+
+<ul>
+<% @console.games.each do | game | %>
+  <li>  <%= game.title %> </li>
+<% end %>
+</ul>
+
+
+<form action="/consoles/<%=@console.id%>" method='post'>
+<input type="hidden" name="_method" value ='delete'>
+<input type="submit" value="delete me! :(">
+</form>

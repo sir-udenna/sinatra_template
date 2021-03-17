@@ -1,0 +1,7 @@
+<h1>This is my game index page</h1>
+
+<ul>
+<% @games.each do | game | %>
+<li> <%= game.title %> is an exclusive on <%= game.console.name %> </li>
+<% end %>
+</ul>

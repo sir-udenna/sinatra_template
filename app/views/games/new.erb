@@ -1,0 +1,16 @@
+<h1> New Game Form </h1>
+
+<form action ="/games" method="post">
+<label> Game Name </label>
+<select name="console_id">
+<% @consoles.each do  | console | %>
+    <option value=<%= console.id%> >  <%= console.name%>    </option>
+<% end %>
+</select>
+<br>
+<label> Game Name </label>
+<input type= "text" name="title">
+<br>
+<input type="submit">
+
+</form>

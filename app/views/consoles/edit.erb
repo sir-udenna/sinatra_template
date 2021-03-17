@@ -1,0 +1,12 @@
+<h1>This is my edit form</h1>
+
+
+
+<form action="/consoles/<%= @console.id %>" method="post">
+<input type="hidden" name="_method" value='patch'>
+<label>Update Name</label>
+<br/>
+<input type="text" name="console_name" value = <%= @console.name %>>
+<br/>
+<input type="submit">
+</form>
